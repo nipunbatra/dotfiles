@@ -15,6 +15,7 @@ $git_status\
 $python\
 $nodejs\
 $rust\
+$env_var_CLAUDE_CODE_PROFILE\
 $cmd_duration\
 $line_break\
 $character"""
@@ -59,3 +60,8 @@ style = "red"
 min_time = 2000
 format = "[$duration](bold yellow) "
 show_milliseconds = false
+
+[env_var.CLAUDE_CODE_PROFILE]
+symbol = "󰚩 "
+style = "bold blue"
+format = "[$symbol$env_value]($style) "
