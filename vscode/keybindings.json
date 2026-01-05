@@ -6,13 +6,13 @@
     {
         "key": "cmd+shift+g",
         "command": "workbench.action.terminal.sendSequence",
-        "args": { "text": "claude --profile glm\n" },
+        "args": { "text": "claude --settings ~/.claude/profiles/glm.json\n" },
         "when": "terminalFocus"
     },
     {
         "key": "cmd+shift+a",
         "command": "workbench.action.terminal.sendSequence",
-        "args": { "text": "claude --profile anthropic\n" },
+        "args": { "text": "claude --settings ~/.claude/profiles/anthropic.json\n" },
         "when": "terminalFocus"
     },
     {
