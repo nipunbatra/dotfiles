@@ -1,0 +1,23 @@
+[
+    {
+        "key": "cmd+enter",
+        "command": "python.execInTerminal"
+    },
+    {
+        "key": "cmd+shift+g",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": { "text": "claude --profile glm\n" },
+        "when": "terminalFocus"
+    },
+    {
+        "key": "cmd+shift+a",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": { "text": "claude --profile anthropic\n" },
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+c",
+        "command": "claude-code.openPanel",
+        "when": "!terminalFocus"
+    }
+]

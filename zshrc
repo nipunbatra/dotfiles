@@ -76,6 +76,17 @@ alias reload='source ~/.zshrc'
 alias termpdf='python3 ~/git/termpdf.py/termpdf.py'
 alias tp='termpdf'
 
+# Claude Code shortcuts
+alias cg='claude --profile glm'           # GLM model
+alias ca='claude --profile anthropic'     # Anthropic (default Claude)
+alias cc='claude'                         # Default profile
+
+# Quick profile switch (changes default for session)
+claude-use() {
+  export CLAUDE_CODE_PROFILE="$1"
+  echo "Claude Code now using profile: $1"
+}
+
 # --- uv Environment ---
 # Auto-activate uv base environment
 [ -f ~/.uv/base/bin/activate ] && source ~/.uv/base/bin/activate
