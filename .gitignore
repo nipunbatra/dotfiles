@@ -1,0 +1,20 @@
+# Secrets - NEVER commit
+*.secrets
+*_secrets*
+.zsh_secrets
+.env
+.env.*
+credentials*
+*.key
+*.pem
+
+# Claude profiles with API keys
+claude/profiles/glm.json
+
+# OS files
+.DS_Store
+*.swp
+*~
+
+# Local overrides
+*.local
