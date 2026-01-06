@@ -12,8 +12,6 @@ format = """
 $directory\
 $git_branch\
 $git_status\
-$python\
-$nodejs\
 $rust\
 $cmd_duration\
 $line_break\
@@ -42,14 +40,10 @@ modified = "!${count}"
 untracked = "?${count}"
 
 [python]
-symbol = " "
-style = "yellow"
-pyenv_version_name = false
-detect_extensions = []  # Disable auto-detection for speed
+disabled = true
 
 [nodejs]
-symbol = " "
-style = "green"
+disabled = true
 
 [rust]
 symbol = " "
